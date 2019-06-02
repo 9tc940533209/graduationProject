@@ -1,0 +1,43 @@
+  <form bindsubmit="formSubmit" bindreset="formReset">
+    <view class='form_view'>
+      <text class='titles'>姓名</text>
+      <input name="name" class='inputs' style="border-color:{{focusId == 1?'#ff6700':'#ccc'}}" placeholder='请输入姓名' bindfocus="inputFocus" bindblur="inputBlur" data-id='1' placeholder-class='placeholderClass' value='{{data.name}}'></input>
+    </view>
+
+
+    <view class='form_view'>
+      <text class='titles'>性别</text>
+      <radio-group class="radio-group" name="sex">
+        <label class="radio">
+          <radio value="男" checked="{{data.sex == '男'}}"/>男
+        </label>
+        <label class="radio">
+          <radio value="女" checked="{{data.sex == '女'}}"/>女
+        </label>
+      </radio-group>
+    </view>
+
+
+    <view class='form_view'>
+      <text class='titles'>年龄</text>
+      <input name="age" type='number' class='inputs' style="border-color:{{focusId == 2?'#ff6700':'#ccc'}}" placeholder='请输入年龄' bindfocus="inputFocus" bindblur="inputBlur" data-id='2' placeholder-class='placeholderClass' value='{{data.age}}'></input>
+    </view>
+
+    <view class='form_view'>
+      <text class='titles'>电话</text>
+      <input name="phone" type='number' class='inputs' style="border-color:{{focusId == 3?'#ff6700':'#ccc'}}" placeholder='请输入电话' bindfocus="inputFocus" bindblur="inputBlur" data-id='3' placeholder-class='placeholderClass' value='{{data.phone}}'></input>
+    </view>
+    <view class='form_view'>
+      <text class='titles'>邮箱</text>
+      <input name="email" class='inputs' style="border-color:{{focusId == 4?'#ff6700':'#ccc'}}" placeholder='请输入邮箱' bindfocus="inputFocus" bindblur="inputBlur" data-id='4' placeholder-class='placeholderClass' value='{{data.email}}'></input>
+    </view>
+
+    <view class='form_view'>
+      <text class='titles'>自我介绍</text>
+      <textarea name="evaluate" value='{{data.evaluate}}' auto-height placeholder="自动变高" class='inputs' style="width:93%;border-color:{{focusId == 5?'#ff6700':'#ccc'}}" placeholder='请输入自我介绍' bindfocus="inputFocus" bindblur="inputBlur" data-id='5' placeholder-class='placeholderClass' show-confirm-bar="{{false}}"
+      />
+    </view>
+
+    <button type="primary" class='primary' form-type="submit"> 确定 </button>
+    <button type="default" bindtap='qu'> 取消 </button>
+  </form>

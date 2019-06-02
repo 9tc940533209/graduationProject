@@ -1,0 +1,66 @@
+/* pages/mancenter/mancenter.wxss */
+page{
+  background-color: #f5f5f8;
+}
+.header{
+  background-color: #fff;
+  padding: 20rpx 30rpx;
+  margin-bottom: 10rpx;
+}
+.names{
+  font-size: 40rpx;
+  font-weight: 800;
+  line-height: 80rpx;
+}
+.information{
+  display: flex;
+  margin-bottom: 20rpx;
+}
+.information text{
+  margin-right: 25rpx;
+  padding-right: 25rpx;
+  border-right: 2rpx solid #ccc;
+}
+.bian{
+  border-right: none!important;
+  color: #ff6700;
+}
+/* .contact{
+  display: flex;
+} */
+.contact text{
+  /* flex: 1; */
+  font-size: 28rpx;
+  color: #909399;
+}
+.contact text:nth-child(1){
+  margin-right: 40rpx;
+}
+.school{
+  display: flex;
+  margin-bottom: 20rpx;
+}
+.school text{
+  flex: 1;
+}
+.time{
+  margin-right: 40rpx;
+}
+.yi{
+  color: #ff6700;
+}
+.shang{
+  margin-bottom: 20rpx;
+}
+.experience{
+  margin-top: 30rpx;
+}
+.ex_time{
+  color: #ccc;
+  font-size: 28rpx;
+  margin-bottom: 20rpx;
+}
+.rens{
+  text-align: center;
+  color: #ff6700;
+}

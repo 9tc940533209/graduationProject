@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+        <title>大学生兼职平台-兼职</title>
+        <!-- ico -->
+        <link rel="shortcut icon" href="./../favicon.ico"  type="image/x-icon"/> 
+        <!-- Bootstrap -->
+        <link href="./../css/bootstrap.min.css" rel="stylesheet">
+        <!-- 让 IE8 支持 HTML5 元素和媒体查询（media queries）功能 -->
+        <script type="text/javascript" src="./../js/respond.min.js"></script>
+        <script type="text/javascript" src="./../js/html5.min.js"></script>
+        <!-- 引入全局配置 -->
+        <link rel="stylesheet" type="text/css" href="./../css/oneself/start.css">
+        <!-- 导航条 -->
+        <link rel="stylesheet" href="./../css/oneself/navigationbar.css">
+        <!-- 弹出框 -->
+        <link rel="stylesheet" href="./../js/dialog/css/zdialog.css">
+        <!-- ptjob.css -->
+        <link rel="stylesheet" href="./../css/oneself/ptjob.css">
+        <!-- 媒体查询css -->
+		<link rel="stylesheet" href="./../css/oneself/media.css">
+    </head>
+    <body>
+        <!-- 头部 -->
+        <div class="t_bj">
+                <div class="container heard_div">
+                    <span>为大学生提供优质兼职服务平台！</span>
+                    <span style="float:right;position: relative;" class="v-father">
+                        <span class="man" style="color:#ff6700"><i class="glyphicon glyphicon-user"></i></span>
+                        <a style="color:#ccc" class="y-deng"></a>
+                        <a href="./login.html" style="color:#ccc" class="v-deng">登陆</a>
+                        <a href="./register.html" class="v-deng" style="display: inline-block;height:40px;width: 80px;text-align: center;color: #fff;background-color: #ff6700;margin-left: 20px;">立即注册</a>
+                        <div class="v-down">
+                            <p><a class="person" href="./personal.html">个人中心</a></p>
+                            <p><a class="as" href="./notification.html">消息通知</a></p>
+                            <p><a class="as" href="./enshrine.html">我的收藏</a></p>
+                            <p class="signOut">退出登录</p>
+                        </div>
+                    </span>
+                </div>
+            </div>
+            <!-- 导航条 -->
+            <nav class="navbar navbar-default head">
+                <div class="container" style="height:100%">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header heights">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false" style="margin-top:15px">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="./../index.html" style="margin-top:-15px;">
+                            <img alt="Brand" src="./../img/logo1.png">
+                        </a>
+                    </div>
+                  
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav" style="margin-right:0;">
+                            <li id="navigation_1"><a href="./../index.html">首页<span class="sr-only">(current)</span></a></li>
+                            <li id="navigation_2"><a href="./ptjob.html" class="active-head">兼职</a></li>
+                            <!-- <li><a href="#">全职</a></li> -->
+                            <li id="navigation_3"><a href="./release.html">我要发布</a></li>
+                            <li id="navigation_4"><a href="./news.html">最新资讯</a></li>
+                            <!-- <li><a href="./message.html">留言板</a></li> -->
+                            <li id="navigation_5"><a href="./abouts.html">关于我们</a></li>
+                        </ul>
+                        <div style="margin-top:20px;float: right;padding-top:0" class=" hidden-sm hidden-xs head_shou">
+                            <input type="text" placeholder="请输入..." id="head_input">
+                            <span>
+                                <span class="glyphicon glyphicon-search"></span>
+                            </span>
+                        </div><!-- /.col-lg-6 -->
+                    </div><!-- /.navbar-collapse -->
+                </div><!-- /.container-fluid -->
+            </nav>
+
+        <div class="container pt_content" style="padding: 10px 0;">
+            <div style="display:flex">
+                <!-- 轮播图 -->
+                <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" style="z-index:0;" data-interval="2500">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                            <img src="./../img/lunbo4.png" alt="...">
+                            <div class="carousel-caption">
+                              <!-- 第一张 -->
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="./../img/lunbo5.png" alt="...">
+                            <div class="carousel-caption">
+                              <!-- 第二张 -->
+                            </div>
+                        </div>
+                        <div class="item">
+                                <img src="./../img/lunbo1.png" alt="...">
+                                <div class="carousel-caption">
+                                  <!-- 第三张 -->
+                                </div>
+                          </div>
+                    </div>
+                    <!-- <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a> -->
+                </div>
+                <!-- 个人信息 -->
+                <div class="pt_right hidden-xs">
+                    <div style="display:flex">
+                        <div style="flex:1;"><img src="./../img/head_portrait.png" alt="" width="100%" height="100%" id="headimg"></div>
+                        <div style="flex:2;" class="pt_right_head">
+                            <p class="name"></p>
+                            <p class="wenhou">欢迎回来，晚上好</p>
+                        </div>
+                    </div>
+                    <p class="pt_right_task hidden-md hidden-sm  hidden-xs">注意：看看今天又有什么新任务吧！</p>
+                    <div style="display:flex" class="pt_right_content">
+                            <div class="xue">
+                                    <p class="zong">0</p>
+                                    <p>共计完成</p>
+                                </div>
+                                <div class="shang">
+                                    <p class="fa">0</p>
+                                    <p>已发布</p>
+                                </div>
+                        <div>
+                            <p class="praise">100%</p>
+                            <p>好评率</p>
+                        </div>
+                    </div>
+                    <a class="pt_right_center" href="./personal.html">个人中心</a>
+                </div>
+			</div>
+			<!-- 筛选 -->
+			<div>
+				<div class="pt_screen container">
+					<!-- 地址选择 -->
+					<div class="pt_screen_site">
+						<span>地址:</span>
+						<ul>
+							<li class="pt_bgc">
+								<span>河南省</span>
+								<span class="glyphicon glyphicon-menu-down"></span>
+							</li>
+							<li id="pt_city">
+								<span>行政市</span>
+								<span class="glyphicon glyphicon-menu-down"></span>
+							</li>
+							<li  id="pt_district">
+								<span>区县级</span>
+								<span class="glyphicon glyphicon-menu-down"></span>
+							</li>
+						</ul>
+					</div>
+					<div class="pt_screen_city">
+						<ul class="cityLi">	
+							
+						</ul>
+					</div>
+					<div class="pt_screen_district">
+						<ul class="districtLi">	
+							
+						</ul>
+					</div>
+					<!-- 行业选择 -->
+					<div class="pt_screen_vocation">
+						<span>行业:</span>
+						<ul class="tackType">
+						</ul>
+					</div>
+					<!-- 条件筛选 -->
+					<div class="pt_screen_condition">
+						<ul>
+							<li>薪酬最高</li>
+							<!-- <li>最新发布</li> -->
+							<li class="condition_data">结算日期</li>
+							<li>清除筛选条件</li>
+						</ul>
+					</div>
+				</div>
+            </div>
+            <!-- 职位展示 -->
+			<div class="pt_recruitment">
+            </div>
+            <!-- 分页 -->
+            <!-- <div value="1 0"></div> -->
+            <div class="fen" style="padding-top:10px;">
+                <p class="noData">暂无数据</p>
+                <div id="page" class="page_div"></div>
+            </div>
+            
+        </div>
+
+        <!-- 底部-->
+        <div class="dibu">
+            <div class="container pad">
+                <div class="dibu_div">
+                    <div class="dibu_left">
+                        <a href="./abouts.html" class="col-md-2 col-sm-3 col-xs-4">关于我们</a>
+                        <a href="./abouts.html" class="col-md-2 col-sm-3 col-xs-4">加入我们</a>
+                        <a href="./abouts.html" class="col-md-2 col-sm-3 col-xs-4"><span>发布</span>须知</a>
+                        <a href="./abouts.html" class="col-md-2 col-sm-3 col-xs-4">帮助中心</a>
+                        <span class="col-xs-12">Copyright©2018 jianzhi.com 大学生兼职平台 版权所有 粤ICP备13061591号</span>
+                    </div>
+                    <div class="dibu_right">
+                        <img src="./../img/erweima.png" alt="">
+                        <span class="hidden-xs">扫一扫<span class="hidden-sm hidden-md">关注微信号</span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
+        <script src="./../js/jquery-1.12.2.js"></script>
+        <!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
+        <script src="./../js/bootstrap.min.js"></script>
+        <!-- 公共js文件 -->
+        <script src="./../js/oneself/public.js"></script>
+        <!-- 导航条js -->
+        <script src="./../js/oneself/navigationbar.js"></script>
+        <!-- 弹出框 -->
+        <script src="./../js/dialog/js/zdialog.js"></script>
+        <!-- cookie -->
+        <script src="./../js/cookie.js"></script>
+        <!-- 模板引擎 -->
+        <script src="./../js/template-native.js"></script>
+        <!-- 分页样式 -->
+        <script type="text/javascript" src="./../js/paging.js"></script>
+        <script src="./../js/oneself/ptjob.js"></script>
+        <!-- 职业类型列表 -->
+        <script type="text/template" id="tasktypelist">
+            <% for(var i=0;i< items.length; i++){ %> 
+            <li id="<%=items[i].typeId%>"><%=items[i].typeName%></li>
+            <% } %>
+        </script>
+        <!-- 城市列表 -->
+        <script type="text/template" id="cityLiTemplate">
+            <% for(var i=0;i< items.length; i++){ %> 
+            <li id="<%=items[i].name%>"><%=items[i].name%></li>
+            <% } %>
+        </script>
+        <!-- 县级市 -->
+        <script type="text/template" id="districtLiTemplate">
+            <% for(var i=0;i< items.length; i++){ %> 
+            <li id="<%=items[i]%>"><%=items[i]%></li>
+            <% } %>
+        </script>
+        <!-- 职位列表 -->
+        <script type="text/template" id="tasklist">
+           <% for(var i=0;i< items.length; i++){ %> 
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                <a href="./pijob.html?id=<%=items[i].id%>">
+                    <span class="shuxian"></span><span style="color:#4b4b4b;"><%=items[i].typeName%></span>
+                    <p style="color:#999;font-size:12px;">时间：<%=items[i].begin_time%></p>
+                    <p><%=items[i].name%></p>
+                    
+                    <div class="pt_recruitment_detail">
+                        <%=items[i].address_city%>-<%=items[i].address_name%><span></span>
+                        招聘<%=items[i].number%>人
+                    </div>
+                    
+                    <div class="pt_recruitment_money">
+                        <span><%=items[i].money%>元</span>
+                        <span><%=items[i].cycle%></span>
+                    </div>
+                </a>
+            </div>
+           <% } %>
+        </script>
+    </body>
+</html>

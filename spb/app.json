@@ -1,0 +1,49 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/release/release",
+    "pages/personal/personal",
+    "pages/pijob/pijob",
+    "pages/map/map",
+    "pages/notification/notification",
+    "pages/enshrine/enshrine",
+    "pages/apply/apply",
+    "pages/rele/rele",
+    "pages/mancenter/mancenter",
+    "pages/editpersonal/editpersonal",
+    "pages/authentication/authentication"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "大学生兼职平台",
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh":true
+  },
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "selectedColor":"#ff6700",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "首页",
+      "iconPath": "static/bcy.png",
+      "selectedIconPath": "static/bcy.png"
+    },{
+      "pagePath": "pages/release/release",
+      "text": "发布",
+      "iconPath": "static/dxh.png",
+      "selectedIconPath": "static/dxh.png"
+    },{
+      "pagePath": "pages/personal/personal",
+      "text": "我的",
+      "iconPath": "static/zuizuiriyu.png",
+      "selectedIconPath": "static/zuizuiriyu.png"
+    }]
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
+  }
+}

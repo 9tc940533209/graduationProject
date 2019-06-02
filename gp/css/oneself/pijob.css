@@ -1,0 +1,109 @@
+.pi_head{
+    /* margin-top: 30px; */
+    /* background-color: rgba(0,0,0,.7); */
+    /* background:#444c5f; */
+    background: #444c60 url(./../../img/timg7.jpg) center center no-repeat;
+    padding: 30px 0;
+    box-sizing: border-box;
+}
+.pi_merchant{
+    position: relative;
+    color: #fff;
+    display: flex;
+    cursor: pointer;
+}
+.pi_merchant img {
+    display: inline-block;
+    /* border-radius: 50%; */
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+}
+.pi_merchant_head {
+  color: #fff;
+}
+.pi_merchant_head:hover{
+    color: #ff6700;
+    transition: 1s;
+}
+.pi_merchant_head>span:first-child {
+    font-size: 37px;
+    font-weight: 700;
+}
+.pi_merchant_head>span:last-of-type {
+    font-size: 12px;
+    display: inline-block;
+    padding: 1px 5px;
+    color: #ff6700;
+    border-radius: 2px;
+    border:1px solid #ff6700;
+}
+.pi_information{
+    padding: 0 15px;
+}
+.pi_information>p{
+    font-weight: 700;
+    font-size: 30px;
+    padding-bottom: 15px;
+}
+.pi_information_content>span {
+    font-weight: 700;
+    font-size: 15px;
+    display: inline-block;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #ff6700;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.pi_information_content>p {
+    color: #61687c;
+    line-height: 30px;
+}
+.collection {
+    position: absolute;
+    bottom: 0;
+    right: 15px;
+    transition: 0.5s;
+}
+.collection:hover{
+    color: #ff6700;
+}
+.collection span {
+    margin-right: 5px;
+}
+#pi_Apply {
+    margin-top: 15px;
+    width: 150px;
+    text-align: center;
+    line-height: 40px;
+    background-color: #ff6700;
+    color: #fff;
+    border-radius: 5px;
+    float: right;
+    cursor: pointer;
+}
+.pi_crumbs {
+    /* margin-top: 20px; */
+    padding: 0;
+}
+.pi_crumbs a{
+    color: #333;
+    line-height: 40px;
+}
+.pi_fl {
+    width: 100%;
+    display: none;
+    position: fixed;
+    bottom: 0;
+    font-size: 15px;
+    text-align: center;
+    line-height: 50px;
+}
+.pi_fl a:first-child {
+    background-color: #fff;
+    color: #ff6700;
+}
+.pi_fl a:last-child {
+    background-color: #ff6700;
+    color: #fff;
+}

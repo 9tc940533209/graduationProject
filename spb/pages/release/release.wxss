@@ -1,0 +1,64 @@
+/* pages/release/release.wxss */
+.content{
+  width:90%;
+  border-radius: 30rpx;
+  box-shadow: 0 2px 20px 0 rgba(153,187,255,.43);
+  margin: 20px auto;
+  padding: 0rpx 40rpx;
+  box-sizing: border-box;
+  padding-bottom: 60rpx;
+}
+.fatitle{
+  color: #535353;
+  font-size: 40rpx;
+  font-weight: 700;
+  /* line-height: 120rpx; */
+  padding: 35rpx 0 20rpx 0;
+  border-bottom: 1px solid #ccc;
+  display: block;
+  margin-bottom: 30rpx;
+}
+/* 公共样式 */
+form{
+  display: block;
+}
+.form_view{
+  margin-bottom: 20rpx;
+}
+.titles{
+  color: #707070;
+  font-size: 32rpx;
+  line-height: 60rpx;
+}
+.inputs{
+  border: 1px solid #ccc;
+  border-radius: 10rpx;
+  /* height: 64rpx; */
+  padding: 10rpx 20rpx;
+  transition: 0.5s;
+}
+.typePlaceholder{
+  color: #ccc;
+}
+.times{
+  display: flex;
+}
+.timesChildOne{
+  flex: 3;
+  padding-right: 30rpx;
+  box-sizing: border-box;
+}
+.timesChildtwo{
+  flex: 2;
+}
+button{
+  margin-top: 30rpx;
+}
+.primary{
+  margin-top: 60rpx;
+}
+
+/* 更改默认样式 */
+.placeholderClass{
+  color: #ccc;
+}

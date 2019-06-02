@@ -1,0 +1,51 @@
+<view class='titles'>
+  <view>{{data.name}}</view>
+  <view>{{data.money}}<text> 元 /{{data.cycle}}</text></view>
+  <view class='other'>
+    <text>{{data.number}}人</text>
+    <text></text>
+    <text>发布时间：{{data.createTime}}</text>
+  </view>
+</view>
+<view class='content'>
+  <!-- <view class='content_child'>
+    <text class='content_title'>开始时间</text>
+    <view class='xian'></view>
+    <text class='content_t'>2019-05-11 09:06:39 - 2019-05-11 09:06:39</text>
+  </view> -->
+  <view class='content_child'>
+    <text class='content_title'>职位描述</text>
+    <view class='xian'></view>
+    <text class='content_t'>开始时间：\n {{data.begin_time}} - {{data.end_time}}\n {{data.describe}}</text>
+  </view>
+  <view class='content_child'>
+    <text class='content_title'>任职要求</text>
+    <view class='xian'></view>
+    <text class='content_t'>{{data.requirement}}</text>
+  </view>
+</view>
+<view class='address'>
+  <view class='content_child mapsTitle'>
+    <text class='content_title'>工作地点</text>
+    <view class='xian'></view>
+  </view>
+</view>
+<view class='address xias'>
+  <image src='../../static/map.png' class='maps'></image>
+  <view class='address_map' bindtap='tiao'>
+    <text>◎</text>
+    <text>{{data.address_city}} {{data.address_name}} {{data.Specific_address}}</text>
+    <text>></text>
+  </view>
+</view>
+<view class='content names'>
+  <view class='content_child'>
+    <text class='content_title'>商家名称</text>
+    <view class='xian'></view>
+    <text class='content_t'><text class='label'>{{data.release_type == 1?'商':'学'}}</text>{{data.release_name}}</text>
+  </view>
+</view>
+<view class='bottom'>
+  <view style="font-size:{{shou?'36rpx':'50rpx'}};color:{{shou?'#ff6700':'#000'}}" bindtap='shous'>{{shou?'❤':'♡'}}</view>
+  <view bindtap='apply'>立刻申请</view>
+</view>

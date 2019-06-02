@@ -1,0 +1,44 @@
+<view class='content'>
+  <!-- 头部 -->
+  <view class='head'>
+    <image src='{{headimg}}' class='headImg' bindtap='tou'></image>
+    <view class='headText' bindtap='deng' wx:if="{{name == ''?true:false}}">登录/注册</view>
+    <view class='headText' wx:if="{{name == ''?false:true}}">{{name}}</view>
+  </view>
+
+
+  <view class='btngroup'>
+    <view class='fat' hover-class="nav" bindtap='mancenter'><view class='btns xian jiantou'>个人中心</view></view>
+    <view class='fat' hover-class="nav" bindtap='message'><view class='btns xian jiantou'>消息通知</view></view>
+    <view class='fat' hover-class="nav" bindtap='enshrine'><view class='btns jiantou'>我的收藏</view></view>
+  </view>
+
+
+   <view class='btngroup'>
+    <view class='fat' hover-class="nav" bindtap='rele'><view class='btns xian jiantou'>发布列表</view></view>
+    <view class='fat' hover-class="nav" bindtap='apply'><view class='btns xian jiantou'>申请列表</view></view>
+  </view>
+
+
+  <view class='btngroup paddings'>
+    <view class='btns jiantou' bindtap='tui'>退出登录</view>
+  </view>
+</view>
+<view class='zhe' wx:if="{{zhe}}">
+  <view class='login'>
+    <text bindtap='ying'>X</text>
+    <button open-type="getUserInfo" lang="zh_CN" bindgetuserinfo="wxLogin" class='wx' type="primary">微信账号登录</button>
+    <button type='warn' bindtap='zhLogin'>账户密码登录</button>
+  </view>
+</view>
+<view class='zhe' wx:if="{{zheTwo}}">
+  <view class='login'>
+    <view class='zhtitle'>登录</view>
+    <input placeholder="请输入账户" class='zhinpput first' value='{{username}}' bindinput="getusername"/>
+    <input password placeholder="请输入密码" class='zhinpput' value="{{password}}" bindinput="getpassword"/>
+    <view class='zhoperation'>
+      <view hover-class="qu" bindtap='zhqu'>取消</view>
+      <view hover-class="dengs" bindtap='dengs'>登录</view>
+    </view>
+  </view>
+</view>

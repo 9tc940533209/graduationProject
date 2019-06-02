@@ -1,0 +1,8 @@
+<navigator class='card' wx:for="{{data}}" wx:key="{{item.id}}" url="/pages/pijob/pijob?id={{item.id}}">
+  <view class='title'>{{item.name}}</view>
+  <view class='but'>
+    <text class='time'>时间：{{item.begin_time}}</text>
+    <text class='status' style='border-color:{{item.status == 1?"#ccc":"#ff6700"}};color:{{item.status == 1?"#ccc":"#ff6700"}}'>{{item.status == 0?"进行中":"已结束"}}</text>
+  </view>
+</navigator>
+<view class='zan' wx:if="{{zan}}">(；´д｀)ゞ无发布任务</view>

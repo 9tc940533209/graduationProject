@@ -1,0 +1,292 @@
+.per_xin {
+  background-color: #fff;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #ff6700;
+  font-size: 15px;
+  padding: 0;
+}
+.per_xin span:first-child{
+  line-height: 50px;
+  display: inline-block;
+  width: 210px;
+  text-align: center;
+  border-bottom: 2px solid #ff6700;
+}
+.per_content {
+  background-color: #fff;
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+}
+.per_first {
+  display: flex;
+  padding-bottom: 40px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #eaedf1;
+}
+.touxiang {
+  width: 116px;
+  height: 116px;
+  margin: 0 20px;
+}
+.touxiang>img{
+  cursor: pointer;
+  /* max-width: 116px;
+  max-height: 160px; */
+
+}
+.per_ziliao>p {
+  color: #000;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+.per_juti {
+  color: #333;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+.per_juti span {
+  display: inline-block;
+  border-right: 1px solid #ccc;
+  text-align: left;
+  margin-right: 15px;
+  min-width: 60px;
+}
+.per_juti span:first-child {
+  min-width: 50px;
+}
+.per_juti span:last-child {
+  border: 0;
+}
+.per_phone {
+  font-size: 15px;
+}
+/* 统计 */
+.per_statistics {
+	margin-left: 200px;
+  cursor: pointer;
+  display: none;
+}
+.per_statistics span{
+	color: #ff6700;
+	font-size: 25px;
+}
+/* 教育经历 */
+.per_second {
+  padding-bottom: 30px;
+  border-bottom: 1px solid #eaedf1;
+  margin-bottom: 20px;
+}
+.per_second>p{
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+.per_second>div {
+  overflow: hidden;
+}
+.per_second>div>span {
+  color: #333;
+  font-size: 18px;
+  line-height: 40px;
+}
+.per_second>div>span:last-child {
+  color: #ff6700;
+}
+/* 自我评价 */
+.per_third {
+  position: relative;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #eaedf1;
+  margin-bottom: 20px;
+}
+.per_third>p:first-child{
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+/* 工作经验 */
+.per_fourth {
+  padding-bottom: 30px;
+  border-bottom: 1px solid #eaedf1;
+  margin-bottom: 20px;
+}
+.per_fourth>p:first-child{
+	font-size: 24px;
+	color: #333;
+	margin-bottom: 20px;
+}
+.per_company{
+	padding: 0;
+	text-overflow: ellipsis;
+    overflow: hidden;
+	white-space: nowrap;
+	font-size: 18px;
+    color: #333;
+	letter-spacing: 1.56px;
+	line-height: 50px;
+}
+.per_times {
+	padding: 0;
+	text-align: right;
+	font-size: 12px;
+	color: #999;
+	letter-spacing: 1.04px;
+	line-height: 20px;
+}
+.per_job_content {
+	padding: 0;
+	line-height: 24px;
+	color: #666;
+}
+.per_fourth_experience>div{
+	margin-bottom: 20px;
+	overflow: hidden;
+}
+/* 任务列表 */
+.per_fifth {
+	padding-bottom: 30px;
+	border-bottom: 1px solid #eaedf1;
+	margin-bottom: 20px;
+	/* max-height: 800px; */
+	overflow: auto;
+}
+.per_fifth>p:first-child{
+	font-size: 24px;
+	color: #333;
+	margin-bottom: 20px;
+	display: inline-block;
+}
+.per_task {
+	color: #333;
+	transition: 0.8s;
+	padding: 20px;
+	border-bottom: 1px solid #ccc;
+}
+.per_task:hover {
+	color: #ff6700;
+}
+.per_task>p:first-child {
+	text-overflow: ellipsis;
+    overflow: hidden;
+	white-space: nowrap;
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 40px;
+	float: left;
+	width: 50%;
+}
+.per_task>p:nth-child(2) {
+	color: #999;
+	font-size: 15px;
+	float: left;
+	line-height: 40px;
+}
+.per_task span {
+	padding: 5px 10px;
+	float: right;
+}
+.per_done {
+	color: #ccc;
+	border: 1px solid #ccc;
+}
+.per_nostart {
+	color: #ff6700;
+	border: 1px solid #ff6700;
+}
+.per_green {
+	color: #67C23A;
+	border: 1px solid #67C23A;
+}
+.per_fifth>span {
+	float: right;
+	cursor: pointer;
+} 
+
+
+.merchant{
+  display: none;
+}
+.student{
+  display: none;
+}
+.ident{
+  display: none;
+}
+.apply{
+  display: none;
+}
+.yifa{
+  display: none;
+}
+.bianji, .fabu{
+  text-align: center;
+  color: #ff6700;
+  cursor: pointer;
+  display: none;
+  font-size: 15px;
+}
+
+/* 商家信息框 */
+.xiuShang{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 99;
+  background-color: rgba(0,0,0,0.5);
+  display: none;
+}
+.xiuShang_content{
+  width: 50%;
+  /* height: 400px; */
+  margin: 0 auto;
+  min-width: 400px;
+  background-color: #fff;
+  margin-top: 180px;
+  padding: 10px 10px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.xiuShang_content_head{
+  overflow: hidden;
+  margin-bottom: 40px;
+}
+.xiuShang_content_head span:first-child{
+  float: left;
+  font-size: 20px;
+  font-weight: 700;
+}
+.xiuShang_content_head span:last-child{
+  float: right;
+  font-size: 18px;
+  cursor: pointer;
+}
+.xiuShang_content_head span:last-child:hover{
+  color: #ff6700;
+}
+.form-group{
+  display: block;
+  margin-bottom: 30px;
+  /* height: 100px; */
+  overflow: hidden;
+}
+.control-label{
+  text-align: right;
+}
+.xiugai{
+  position: absolute;
+  right: 0;
+  top: 0;
+  color: #ff6700;
+  cursor: pointer;
+  display: none;
+}
+.works_zan{
+  text-align: center;
+  color: #ff6700;
+  cursor: pointer;
+  display: none;
+  font-size: 15px;
+}

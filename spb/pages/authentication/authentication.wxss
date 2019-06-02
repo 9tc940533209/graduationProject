@@ -1,0 +1,26 @@
+.inputs{
+  border: 1px solid #ccc;
+  border-radius: 10rpx;
+  /* height: 64rpx; */
+  padding: 10rpx 20rpx;
+  transition: 0.5s;
+}
+/* 更改默认样式 */
+.placeholderClass{
+  color: #ccc;
+}
+form{
+  display: block;
+  padding: 30rpx 30rpx;
+}
+.form_view{
+  margin-bottom: 20rpx;
+}
+.titles{
+  color: #707070;
+  font-size: 32rpx;
+  line-height: 60rpx;
+}
+.primary{
+  margin:40rpx 0; 
+}

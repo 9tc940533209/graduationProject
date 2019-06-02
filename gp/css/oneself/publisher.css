@@ -1,0 +1,239 @@
+.pub_head{
+  /* margin-top: 30px; */
+  /* background-color: rgba(0,0,0,.7); */
+  /* background:#444c5f; */
+  background: #444c60 url(./../../img/timg5.jpg) center center no-repeat;
+  padding: 30px 0;
+  box-sizing: border-box;
+}
+.collections {
+  position: absolute;
+  bottom: -15px;
+  right: 15px;
+  transition: 0.5s;
+}
+.collections span {
+  margin-right: 20px;
+  padding-bottom: 10px;
+}
+/* 简介 */
+.first{
+  color: #ff6700;
+  border-bottom: 2px solid #ff6700;
+  display: inline-block;
+}
+.pub_content {
+  padding: 0;
+  position: relative;
+  height: 500px;
+  background-color: #fff;
+  /* overflow:hidden; */
+}
+.pub_content>div{
+  position: absolute;
+  display: none;
+  background-color:#fff;
+  min-height: 300px;
+  /* height: 200px; */
+  width: 100%;
+}
+.pub_content .pub_first {
+  display: block;
+  padding: 30px 20px;
+}
+.pub_first>span {
+  font-size: 18px;
+  font-weight: 800;
+  display: inline-block;
+  margin-bottom: 5px;
+}
+.pub_first>div {
+  width: 30px;
+  height: 4px;
+  background-color: #ff6700;
+  margin-bottom: 5px;
+}
+.pub_first>p{
+  line-height: 30px;
+  color: #61687c;
+  margin-bottom: 20px;
+}
+/* 招聘信息 */
+.pub_second {
+  position: relative;
+  height: 500px;
+}
+.pub_second_xin {
+  display: block;
+  border-bottom: 1px solid #f2f2f5;
+  position: relative;
+  cursor: pointer;
+  transition: 0.5s;
+  padding: 10px 20px;
+}
+.pub_second_xin:hover{
+  background-color: #f5f5f5;
+}
+.pub_second_xin:hover .pub_up>p:first-child{
+  color: #ff6700;
+  font-size: 18px;
+}
+.pub_posi {
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform:rotate(30deg);
+  padding: 5px 10px;
+  display: inline-block;
+  font-size: 13px;
+}
+.pub_complete {
+  border: 1px solid #ccc;
+  color: #ccc;
+}
+.pub_in {
+  border: 1px solid #ff6700;
+  color: #ff6700;
+}
+.pub_second_xin>div {
+  overflow: hidden;
+}
+.pub_second_xin>div>p:first-child {
+  float: left;
+}
+.pub_second_xin>div>p:last-child {
+  float: right;
+  margin-right: 50px;
+}
+.pub_up {
+  line-height: 40px;
+}
+.pub_up>p:first-child{
+  color: #414a60;
+  font-size: 16px;
+  font-weight: 600;
+  transition: 0.7s;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 70%;
+}
+.pub_up>p:last-child{
+  color: #ff6700;
+  font-weight: 700;
+  font-size: 13px;
+}
+.pub_dowm>p{
+  color: #9fa3b0;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+.pub_xian {
+  display: none;
+}
+.pub_second_fenye {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+/* 分页 */
+.page_div {
+	font-size: 15px;
+	font-family: "microsoft yahei";
+	color: #333;
+	margin-right: 10px;
+	box-sizing: border-box;
+	padding: 0!important;
+	margin: 0!important;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	float: right;
+}
+/*
+ * 页数按钮样式
+ */
+
+.page_div a {
+	min-width: 35px;
+	height: 33px;
+	/* border: 1px solid #dce0e0!important; */
+	text-align: center;
+	margin: 0 4px;
+	cursor: pointer;
+	line-height: 33px;
+	color: #666666;
+	font-size: 13px;
+	display: inline-block;
+	background-color: #fff;
+}
+
+#firstPage,
+#lastPage {
+	width: 50px;
+	/* color: #0073A9; */
+	color: #333;
+	transition: 0.5s;
+	/* border: 1px solid #0073A9!important; */
+}
+
+#prePage,
+#nextPage {
+	width: 70px;
+	/* color: #0073A9; */
+	color: #333;
+	transition: 0.5s;
+	/* border: 1px solid #0073A9!important; */
+}
+
+.page_div .current {
+	background-color: #ff6700;
+	border-color: #0073A9;
+	color: #FFFFFF;
+}
+#firstPage:hover,
+#lastPage:hover,
+#prePage:hover,
+#nextPage:hover {
+	background-color: #ff6700;
+	color: #fff;
+}
+
+.totalPages,.totalSize {
+	margin: 0 10px;
+	display: none;
+}
+
+.totalPages span,
+.totalSize span {
+	color: #0073A9;
+	margin: 0 5px;
+}
+/* ----------评价------------ */
+.pub_third {
+  background-color: #fff;
+  padding: 20px 20px;
+}
+.pub_third>p{
+  font-size: 15px;
+  color: #000;
+  font-weight: 700;
+  background-color: #f5f5f5;
+  padding: 5px;
+}
+.names {
+  color: #000;
+  margin-right: 40px;
+  line-height: 40px;
+}
+.times {
+  color: #999;
+  font-size: 12px;
+  margin-bottom: 10px;
+  display: block;
+}
+.ping_content {
+  line-height: 30px;
+}
+.ping li {
+  border-bottom: 1px solid #ddd;
+}

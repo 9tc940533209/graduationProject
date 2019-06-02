@@ -1,0 +1,7 @@
+<view class='card' wx:for="{{data}}" wx:key="{{item.id}}">
+  <view class='title'>{{item.name}}</view>
+  <view class='time'>{{item.createTime}}</view>
+  <view class='content'>{{item.content}}</view>
+  <view class='del jiantou' data-id='{{item.id}}' hover-class='dels' bindtap='delMessage'>删除消息</view>
+</view>
+<view class='zan' wx:if="{{zan}}">(；´д｀)ゞ暂无消息</view>

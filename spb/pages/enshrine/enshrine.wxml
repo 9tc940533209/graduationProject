@@ -1,0 +1,18 @@
+<view class='dels' wx:if="{{!zan}}">长按删除搜藏哦</view>
+<view class='contant'>
+  <navigator bindlongpress='del' data-id='{{item.id}}' class='pt_recruitment' wx:for="{{data}}" wx:key="{{item.id}}" url="/pages/pijob/pijob?id={{item.id}}">
+    <view class='title'>
+      <text>{{item.name}}</text>
+      <text>{{item.money}}元/{{item.cycle}}</text>
+    </view>
+    <view class='address'>
+      <text>{{item.address_city}}-{{item.address_name}}</text>
+      <text></text>
+      <text>招聘{{item.number}}人</text>
+    </view>
+    <view class='times'>时间：{{item.begin_time}}
+    </view>
+  </navigator>
+  
+</view>
+<view class='zan' wx:if="{{zan}}">(；´д｀)ゞ暂无收藏</view>

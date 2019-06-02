@@ -1,0 +1,132 @@
+input::-webkit-input-placeholder{
+  color:#ccc;
+}
+input::-moz-placeholder{   /* Mozilla Firefox 19+ */
+  color:#ccc;
+}
+input:-moz-placeholder{    /* Mozilla Firefox 4 to 18 */
+  color:#ccc;
+}
+input:-ms-input-placeholder{  /* Internet Explorer 10-11 */ 
+  color:#ccc;
+}
+.rele_content {
+    background-color: #fff;
+    /* height: 1300px; */
+    width: 992px;
+    margin: 20px auto;
+    padding-bottom: 80px;
+    box-shadow: 0 2px 20px 0 rgba(153,187,255,.33);
+    border-radius: 20px;
+}
+.rele_forms {
+    width: 90%;
+    margin: 0 auto;
+}
+.rele_div {
+    min-height: 100px;
+    /* overflow: hidden; */
+}
+.rele_div>p,.rels_choice>p {
+    color: #707070;
+    font-size: 16px;
+    line-height: 40px;
+}
+.rele_input {
+    width: 100%;
+    height: 40px;
+    /* background-color: red; */
+    border: 1px solid #ccc;
+    /* border-radius: 5px; */
+    padding: 3px 10px;
+}
+.rele_input input {
+    height: 100%;
+    width: 100%;
+    outline: 0;
+    border: 0;
+}
+.rele_div textarea {
+  width: 100%;
+  border:1px solid #ccc;
+  outline: 0;
+  resize: none;
+}
+.rele_div span {
+    color: #ff6700;
+    font-size: 12px;
+    display: none;
+}
+.rels_choice {
+    padding: 0;
+}
+.choices, .san {
+    position: relative;
+}
+.choices>div, .san>div {
+    /* width: 70%; */
+    height: 40px;
+    /* border-radius: 5px; */
+    border:1px solid #ccc;
+    line-height: 35px;
+    font-size: 14px;
+    padding-left: 10px;
+    cursor: pointer;
+    color: #ccc;
+}
+.choices ul, .san ul  {
+    width: 70%;
+    height: 150px;
+    border:1px solid #ccc;
+    position: absolute;
+    overflow-y: auto;
+    top: 50px;
+    box-sizing: border-box;
+    box-shadow: 0 2px 20px 0 rgba(153,187,255,.33);
+    display: none;
+    z-index: 999;
+    background-color: #fff;
+}
+.choices ul li, .san ul li {
+    line-height: 25px;
+    cursor: pointer;
+    padding-left: 15px;
+    font-size: 14px;
+    color: #606266;
+    line-height: 35px;
+    
+}
+.choices ul li:hover {
+    background-color: #f5f5f5;
+    color: #ff6700;
+}
+.san ul li:hover {
+    background-color: #f5f5f5;
+    color: #ff6700;
+}
+.money,.start_time,.numbers,.choice {
+    width: 70%;
+}
+.moneys {
+    padding: 0;
+}
+/* 省市级 */
+.san>div {
+    width: 90%
+}
+.san>ul {
+    width: 90%
+}
+/* 发布 */
+.rele_btn {
+  height: 45px;
+  line-height: 45px;
+  font-size: 15px;
+  background-color: #ff6700;
+  border-radius: 20px;
+  color: #fff;
+  text-align: center;
+  width: 250px;
+  cursor: pointer;
+  float: right;
+}

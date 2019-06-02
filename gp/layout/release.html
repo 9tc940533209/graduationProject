@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+        <title>大学生兼职平台-发布兼职</title>
+        <!-- ico -->
+        <link rel="shortcut icon" href="./../favicon.ico"  type="image/x-icon"/> 
+        <!-- Bootstrap -->
+        <link href="./../css/bootstrap.min.css" rel="stylesheet">
+        <!-- 让 IE8 支持 HTML5 元素和媒体查询（media queries）功能 -->
+        <script type="text/javascript" src="./../js/respond.min.js"></script>
+        <script type="text/javascript" src="./../js/html5.min.js"></script>
+        <!-- 引入全局配置 -->
+        <link rel="stylesheet" type="text/css" href="./../css/oneself/start.css">
+        <!-- 导航条 -->
+        <link rel="stylesheet" href="./../css/oneself/navigationbar.css">
+        <link rel="stylesheet" href="./../css/oneself/release.css">
+        <!-- 弹出框 -->
+        <link rel="stylesheet" href="./../js/dialog/css/zdialog.css">
+        <!-- 媒体查询css -->
+        <link rel="stylesheet" href="./../css/oneself/media.css">
+        <!-- 时间 -->
+        <link rel="stylesheet" href="./../js/data/shijian.css">
+    </head>
+    <body style="background-color:#fff">
+        <!-- 头部 -->
+        <div class="t_bj">
+                <div class="container heard_div">
+                    <span>为大学生提供优质兼职服务平台！</span>
+                    <span style="float:right;position: relative;" class="v-father">
+                        <span class="man" style="color:#ff6700"><i class="glyphicon glyphicon-user"></i></span>
+                        <a style="color:#ccc" class="y-deng"></a>
+                        <a href="./login.html" style="color:#ccc" class="v-deng">登陆</a>
+                        <a href="./register.html" class="v-deng" style="display: inline-block;height:40px;width: 80px;text-align: center;color: #fff;background-color: #ff6700;margin-left: 20px;">立即注册</a>
+                        <div class="v-down">
+                            <p><a class="person" href="./personal.html">个人中心</a></p>
+                            <p><a class="as" href="./notification.html">消息通知</a></p>
+                            <p><a class="as" href="./enshrine.html">我的收藏</a></p>
+                            <p class="signOut">退出登录</p>
+                        </div>
+                    </span>
+                </div>
+            </div>
+            <!-- 导航条 -->
+            <nav class="navbar navbar-default head">
+                <div class="container" style="height:100%">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header heights">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false" style="margin-top:15px">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="./../index.html" style="margin-top:-15px;">
+                            <img alt="Brand" src="./../img/logo1.png">
+                        </a>
+                    </div>
+                  
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav" style="margin-right:0;">
+                            <li id="navigation_1"><a href="./../index.html">首页<span class="sr-only">(current)</span></a></li>
+                            <li id="navigation_2"><a href="./ptjob.html">兼职</a></li>
+                            <!-- <li><a href="#">全职</a></li> -->
+                            <li id="navigation_3"><a href="./release.html" class="active-head">我要发布</a></li>
+                            <li id="navigation_4"><a href="./news.html">最新资讯</a></li>
+                            <!-- <li><a href="./message.html">留言板</a></li> -->
+                            <li id="navigation_5"><a href="./abouts.html">关于我们</a></li>
+                        </ul>
+                        <div style="margin-top:20px;float: right;padding-top:0" class=" hidden-sm hidden-xs head_shou">
+                            <input type="text" placeholder="请输入..." id="head_input">
+                            <span>
+                                <span class="glyphicon glyphicon-search"></span>
+                            </span>
+                        </div><!-- /.col-lg-6 -->
+                    </div><!-- /.navbar-collapse -->
+                </div><!-- /.container-fluid -->
+            </nav>
+        <img src="./../img/release_bg.png" class="img-responsive" alt="Responsive image">
+        <div class="rele_content">
+            <div class="rele_forms" >
+                <p style="color:#535353;font-size:20px;font-weight: 700;line-height: 60px;border-bottom: 1px solid #ccc;margin-bottom: 20px;">发布职位基本信息</p>
+                <form action="#">
+                    <!-- 职位名称 -->
+                    <div class="rele_div">
+                        <p>职位名称</p>
+                        <div class="rele_input names">
+                            <input type="text" placeholder="3到20字以内，例如 服务员"/>
+                        </div>
+                        <span>*请输入职位名称</span>
+                        <span>*只能输入3到15个字符哦</span>
+                    </div>
+                    <!-- 职位类型 -->
+                    <div class="rele_div">
+                        <div class="col-sm-6 col-xs-12 rels_choice">
+                            <p>职位类型</p>
+                            <div class="choices start_time types">
+                                <div class="typeDiv">请选择</div>
+                                <ul class="tackType"></ul>
+                            </div>
+                            <span class="typeNull">*请选择职位类型</span>
+                        </div>
+                        <div class="col-sm-6 col-xs-12 rels_choice">
+                            <p>所需人数</p>
+                            <div class="rele_input start_time">
+                                <input type="number" placeholder="请输入" id="numbers">
+                            </div>
+                            <span class="numbersNull">*请输入所需人数</span>
+                        </div>
+                    </div>
+                    <!-- 起止时间 -->
+                    <div class="rele_div times">
+                        <!-- 开始时间 -->
+                        <div class="rele_div col-sm-6 col-xs-12" style="padding:0;">
+                            <p>开始时间</p>
+                            <div class="rele_input start_time">
+                                <input type="text"  id="input1" value="" placeholder="请选择开始时间"/>
+                            </div>
+                            <span class="beginTime">*请选择开始时间</span>
+                            <span class="less_times">*开始时间不能小于今天</span>
+                        </div>
+                        <!-- 结束时间 -->
+                        <div class="rele_div col-sm-6 col-xs-12" style="padding:0;">
+                                <p>结束时间</p>
+                                <div class="rele_input start_time">
+                                    <input type="text"  id="input2" value="" placeholder="请选择结束时间"/>
+                                </div>
+                                <span class="endTime">*请选择结束时间</span>
+                                <span class="less_time">*结束时间不能小于开始时间</span>
+                            </div>
+                    </div>
+                    <!-- 薪资 -->
+                    <div class="rele_div">
+                        <!-- 薪酬 -->
+                        <div class="rele_div col-sm-6 col-xs-12" style="padding:0;">
+                            <p>薪资</p>
+                            <div class="rele_input money">
+                                <input type="number" placeholder="元/日"/>
+                            </div>
+                            <span>*请输入薪资</span>
+                            <span>*薪资必须大于0</span>
+                        </div>
+                        <!-- 结算周期 -->
+                        <div class="rele_div rels_choice col-sm-6 col-xs-12 money_time">
+                            <p>结算周期</p>
+                            <div class="choices choice">
+                                <div class="cycle">请选择</div>
+                                <ul style="height:110px">
+                                    <li>日结</li>
+                                    <li>周结</li>
+                                    <li>半月结</li>
+                                    <li>月结</li>
+                                </ul>
+                            </div>
+                            <span class="cycleNull">*请选择结算周期</span>
+                        </div>
+                    </div>
+                    <!-- 地址 -->
+                    <div class="rele_div address">
+                        <p>工作地点</p>
+                        <div class="rels_choice col-md-4 col-sm-6 col-xs-12">
+                            <div class="san citys">
+                                <div class="cityDiv">行政市</div>
+                                <ul class="cityLi">
+                                </ul>
+                            </div>
+                            <span class="cityNull">*请选择行政市</span>
+                        </div>
+                        <div class="rels_choice col-md-4 col-sm-6 col-xs-12">
+                            <div class="san districtLis">
+                                <div class="districtDiv">区县级</div>
+                                <ul class="districtLi">
+                                </ul>
+                            </div>
+                            <span class="districtNull">*请选择区县</span>
+                        </div>
+                    </div>
+                    <!-- 详细地址 -->
+                    <div class="rele_div">
+                        <p>详细地址</p>
+                        <div class="rele_input xiangxi_add">
+                            <input type="text" placeholder="请输入详细地址，例如街道，楼宇等"/>
+                        </div>
+                        <span>*请输入地址</span>
+                        <span>*最多能输入40个字哦</span>
+                    </div>
+                    <!-- 职位描述 -->
+                    <div class="rele_div ad" style="margin-bottom:20px;">
+                        <p>职位描述</p>
+                        <textarea rows="3" class="describe"></textarea>
+                        <span>*请输入职位描述</span>
+                        <span>*最多能输入200个字哦</span>
+                    </div>
+                    <!-- 任职要求 -->
+                    <div class="rele_div" style="margin-bottom:40px;">
+                        <p>任职要求</p>
+                        <textarea rows="3" class="requirement"></textarea>
+                        <span>*请输入任职要求</span>
+                        <span>*最多能输入200个字哦</span>
+                    </div>
+                    <div class="rele_btn">
+                        发布
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!-- 底部-->
+        <div class="dibu">
+            <div class="container pad">
+                <div class="dibu_div">
+                    <div class="dibu_left">
+                        <a href="./abouts.html" class="col-md-2 col-sm-3 col-xs-4">关于我们</a>
+                        <a href="./abouts.html" class="col-md-2 col-sm-3 col-xs-4">加入我们</a>
+                        <a href="./abouts.html" class="col-md-2 col-sm-3 col-xs-4"><span>发布</span>须知</a>
+                        <a href="./abouts.html" class="col-md-2 col-sm-3 col-xs-4">帮助中心</a>
+                        <span class="col-xs-12">Copyright©2018 jianzhi.com 大学生兼职平台 版权所有 粤ICP备13061591号</span>
+                    </div>
+                    <div class="dibu_right">
+                        <img src="./../img/erweima.png" alt="">
+                        <span class="hidden-xs">扫一扫<span class="hidden-sm hidden-md">关注微信号</span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
+        <script src="./../js/jquery-1.12.2.js"></script>
+        <!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
+        <script src="./../js/bootstrap.min.js"></script>
+        <!-- 公共js文件 -->
+        <script src="./../js/oneself/public.js"></script>
+        <!-- 弹出框 -->
+        <script src="./../js/dialog/js/zdialog.js"></script>
+        <!-- cookie -->
+        <script src="./../js/cookie.js"></script>
+        <!-- 模板引擎 -->
+        <script src="./../js/template-native.js"></script>
+        <!-- 导航条js -->
+        <script src="./../js/oneself/navigationbar.js"></script>
+        <script src="./../js/oneself/release.js"></script>
+        <!-- 时间 -->
+        <script src="./../js/data/jquer_shijian.js"></script>
+        <!-- 职业类型列表 -->
+        <script type="text/template" id="tasktypelist">
+            <% for(var i=0;i< items.length; i++){ %> 
+            <li id="<%=items[i].typeId%>"><%=items[i].typeName%></li>
+            <% } %>
+        </script>
+        <!-- 城市列表 -->
+        <script type="text/template" id="cityLiTemplate">
+            <% for(var i=0;i< items.length; i++){ %> 
+            <li id="<%=items[i].name%>"><%=items[i].name%></li>
+            <% } %>
+        </script>
+        <!-- 县级市 -->
+        <script type="text/template" id="districtLiTemplate">
+            <% for(var i=0;i< items.length; i++){ %> 
+            <li id="<%=items[i]%>"><%=items[i]%></li>
+            <% } %>
+        </script>
+    </body>
+</html>

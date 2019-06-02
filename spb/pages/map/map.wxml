@@ -1,0 +1,16 @@
+<view class='contant'>
+  <map id="map" longitude="{{lng}}" latitude="{{lat}}" scale="14"  markers="{{markers}}"   bindmarkertap="markertap" bindregionchange="regionchange" show-location style="width: 100%;" show-location="{{din}}"></map>
+  <view class='address' bindtap='aaa'>{{address}}
+  </view>
+</view>
+
+<!-- longitude 中心经度
+latitude	中心纬度
+scale 缩放级别
+controls 控件
+bindcontroltap 点击控件触发
+markers 标记点
+bindmarkertap 点击标记点
+polyline 路线
+bindregionchange 野发生变化时触发
+show-location 显示带有方向的当前定位点 -->

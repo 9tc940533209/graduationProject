@@ -1,0 +1,72 @@
+body {
+    background: url(./../../img/bg_login.png) repeat;
+}
+.register {
+    overflow: hidden;
+    margin:0 auto;
+    background-image: url(./../../img/con-bg.jpg);
+    background-size: 100% 100%;
+    height: 550px;
+    width: 400px;
+    margin-top: 100px;
+    padding: 0 30px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    box-shadow: 0 9px 30px -6px rgba(0,0,0,.2), 0 18px 20px -10px rgba(0,0,0,.04), 0 18px 20px -10px rgba(0,0,0,.04), 0 10px 20px -10px rgba(0,0,0,.04);
+}
+.register_logo {
+    margin-top: 30px;
+    color: #333;
+    font-weight: 600;
+    text-align: center;
+    font-size: 20px;
+}
+.register_logo a {
+    display: inline-block;
+    margin: 20px auto;
+    width: 80px;
+}
+.register_input_deng {
+    margin-top: 40px;
+}
+.input_two {
+    margin-top: 20px;
+}
+.geduan span {
+    display: none;
+    color: #ff6700;
+    font-size: 12px;
+}
+.register_other {
+    font-size: 12px;
+    color: #999;
+}
+.register_other span {
+    display: inline-block;
+    line-height: 20px;
+}
+.register_other input {
+    margin-right: 5px;
+    cursor: pointer;
+}
+.register_land {
+    height: 46px;
+    line-height: 46px;
+    color: #fff;
+    background-color: #ff6700;
+    opacity: 0.5;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.register_deng {
+    color: #999;
+    font-size: 12px;
+    text-align: center;
+    line-height: 40px;
+    border-top: 1px solid #999;
+}
+.register_deng a{
+    cursor: pointer;
+}

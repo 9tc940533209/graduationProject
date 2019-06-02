@@ -1,0 +1,57 @@
+<!-- <view class='swiper'>
+  <swiper
+    indicator-dots="{{indicatorDots}}"
+    autoplay="{{autoplay}}"
+    interval="{{interval}}"
+    duration="{{duration}}"
+    circular="{{circular}}"
+  >
+    <block wx:for="{{imgUrls}}" wx:key="{{item}}">
+      <swiper-item>
+        <image src="{{item}}" class="slide-image" width="355" height="150" />
+      </swiper-item>
+    </block>
+  </swiper>
+</view> -->
+
+<view class='screen'>
+  <view class='searchinput'>
+    <input placeholder='请输入想要的职位......' placeholder-class='placeholderClass' style="border-color:{{focusId == 1?'#ff6700':'#ccc'}}" placeholder='3到20字以内，例如服务员' bindfocus="inputFocus" bindblur="inputBlur" data-id='1' value='{{values}}'></input>
+  </view>
+  <view class='screenText' style="border-bottom:{{show?'1rpx solid #E4E7ED':'none'}}">
+    <picker bindchange="screenChangeD" mode="region" value='{{region}}'>
+      <text bindtap='dropDown' data-index='1' style='color:{{screenIndex == 1?"#ff6700":"#666"}}'>地点﹀</text>
+    </picker>
+    <picker bindchange="screenChangeH" range="{{taskTypes}}" range-key="{{'typeName'}}">
+      <text bindtap='dropDown' data-index='2' style='color:{{screenIndex == 2?"#ff6700":"#666"}}'>行业﹀</text>
+    </picker>
+  </view>
+  <!-- <view class='dropDown' animation="{{animation}}">
+    <view class='industry'>
+      <text>服务员</text>
+    </view>
+    <view class='dropDownBtn'>
+      <view>重置</view>
+      <view>确定</view>
+    </view>
+  </view> -->
+</view>
+
+<view class='contant'>
+  <navigator class='pt_recruitment' wx:for="{{data}}" wx:key="{{item.id}}" url="/pages/pijob/pijob?id={{item.id}}">
+    <view class='title'>
+      <text>{{item.name}}</text>
+      <text>{{item.money}}元/{{item.cycle}}</text>
+    </view>
+    <view class='address'>
+      <text>{{item.address_city}}-{{item.address_name}}</text>
+      <text></text>
+      <text>招聘{{item.number}}人</text>
+    </view>
+    <view class='times'>时间：{{item.begin_time}}
+    </view>
+  </navigator>
+  <view class='loads' wx:if="{{loads}}">正在努力加载中哦─=≡Σ(((つ•̀ω•́)つ</view>
+  <view class='loads' wx:if="{{ends}}">∑(っ°Д°;)っ卧槽，没有了</view>
+  <view class='none' wx:if="{{none}}">(￣^￣゜)尴尬,没数据呀</view>
+</view>

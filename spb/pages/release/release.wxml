@@ -1,0 +1,95 @@
+<view class='content'>
+  <text class='fatitle'>发布职位基本信息</text>
+  <form bindsubmit="formSubmit" bindreset="formReset">
+    <view class='form_view'>
+      <text class='titles'>职位名称</text>
+      <input name="name" class='inputs' style="border-color:{{focusId == 1?'#ff6700':'#ccc'}}" placeholder='3到20字以内，例如服务员' bindfocus="inputFocus" bindblur="inputBlur" data-id='1' placeholder-class='placeholderClass'></input>
+    </view>
+    <view class='form_view'>
+      <text class='titles'>职位类型</text>
+      <picker range-key="{{'typeName'}}" range="{{type}}" bindchange="typeChange" name="type">
+        <view class='inputs'>
+          <text class='typePlaceholder' wx:if="{{typePlaceholder}}">请选择</text>{{typechiose}}
+        </view>
+      </picker>
+    </view>
+    <view class='form_view'>
+      <text class='titles'>所需人数</text>
+      <input class='inputs' type='number' style="border-color:{{focusId == 2?'#ff6700':'#ccc'}}" placeholder='请输入' bindfocus="inputFocus" bindblur="inputBlur" data-id='2' placeholder-class='placeholderClass' name="number"></input>
+    </view>
+    <view class='form_view'>
+      <text class='titles'>薪资</text>
+      <input class='inputs' type='number' style="border-color:{{focusId == 9?'#ff6700':'#ccc'}}" placeholder='请输入' bindfocus="inputFocus" bindblur="inputBlur" data-id='9' placeholder-class='placeholderClass' name="money"></input>
+    </view>
+    <view class='form_view'>
+      <text class='titles'>结算周期</text>
+      <picker range="{{cycle}}" bindchange="cycleChange" name="cycle">
+        <view class='inputs'>
+          <text class='typePlaceholder' wx:if="{{cyclePlaceholder}}">请选择</text>{{cyclechiose}}
+        </view>
+      </picker>
+    </view>
+    <!-- 开始时间 -->
+    <view class='times'>
+      <view class="form_view timesChildOne">
+        <text class='titles'>开始日期</text>
+        <picker mode="date" value="{{begindate}}" bindchange="beginDateChange" name="begindate">
+          <view class="inputs">
+            <text class='typePlaceholder' wx:if="{{begindate == ''?true:false}}">请选择</text>{{begindate}}
+          </view>
+        </picker>
+      </view>
+      <view class="form_view timesChildtwo">
+        <text class='titles'>开始时间</text>
+        <picker mode="time" value="{{begintime}}" bindchange="beginTimeChange" name="begintime">
+          <view class="inputs">
+            <text class='typePlaceholder' wx:if="{{begintime == ''?true:false}}">请选择</text>{{begintime}}
+          </view>
+        </picker>
+      </view>
+    </view>
+    <!-- 结束时间 -->
+    <view class='times'>
+      <view class="form_view timesChildOne">
+        <text class='titles'>结束日期</text>
+        <picker mode="date" value="{{enddate}}" bindchange="endDateChange" name="enddate">
+          <view class="inputs">
+            <text class='typePlaceholder' wx:if="{{enddate == ''?true:false}}">请选择</text>{{enddate}}
+          </view>
+        </picker>
+      </view>
+      <view class="form_view timesChildtwo">
+        <text class='titles'>结束时间</text>
+        <picker mode="time" value="{{endtime}}" bindchange="endTimeChange" name="endtime">
+          <view class="inputs">
+            <text class='typePlaceholder' wx:if="{{endtime == ''?true:false}}">请选择</text>{{endtime}}
+          </view>
+        </picker>
+      </view>
+    </view>
+    <view class="form_view">
+      <text class='titles'>工作地点</text>
+      <picker mode="region" bindchange="bindRegionChange" value="{{region}}" name="address">
+        <view class="inputs">
+          <text class='typePlaceholder' wx:if="{{region.length == 0?true:false}}">请选择工作地点</text>{{region[0]}} {{region[1]}} {{region[2]}}
+        </view>
+      </picker>
+    </view>
+    <view class='form_view'>
+      <text class='titles'>详细地址</text>
+      <input name="Specific_address" class='inputs' style="border-color:{{focusId == 3?'#ff6700':'#ccc'}}" placeholder='请输入详细地址，例如街道楼宇等' bindfocus="inputFocus" bindblur="inputBlur" data-id='3' placeholder-class='placeholderClass'></input>
+    </view>
+    <view class='form_view'>
+      <text class='titles'>职位描述</text>
+      <textarea name="describe" auto-height placeholder="自动变高" class='inputs' style="width:93%;border-color:{{focusId == 4?'#ff6700':'#ccc'}}" placeholder='请输入职位描述' bindfocus="inputFocus" bindblur="inputBlur" data-id='4' placeholder-class='placeholderClass' show-confirm-bar="{{false}}"
+      />
+    </view>
+    <view class='form_view'>
+      <text class='titles'>任职要求</text>
+      <textarea name="requirement" auto-height placeholder="自动变高" class='inputs' style="width:93%;border-color:{{focusId == 5?'#ff6700':'#ccc'}}" placeholder='请输入任职要求' bindfocus="inputFocus" bindblur="inputBlur" data-id='5' placeholder-class='placeholderClass' show-confirm-bar="{{false}}"
+      />
+    </view>
+    <button type="primary" loading="{{loading}}" class='primary' form-type="submit"> 发布 </button>
+    <button type="default" form-type="reset"> 重置 </button>
+  </form>
+</view>

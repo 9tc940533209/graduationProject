@@ -1,0 +1,63 @@
+<view class='header'>
+  <view class='names'>{{data.information.name}}</view>
+  <view class='information'>
+    <text>{{data.information.age}}岁</text>
+    <text>{{data.information.sex}}</text>
+    <text>{{type == 0?"未认证":type == 1?"商家":"学生"}}</text>
+    <text class='bian' bindtap='tiao'>编辑</text>
+  </view>
+  <view class='contact'>
+    <text>P:{{data.information.phone?data.information.phone:"暂无数据"}}</text>
+    <text>E:{{data.information.email?data.information.email:"暂无数据"}}</text>
+  </view>
+</view>
+
+<view class='header' wx:if="{{type == 0?true:false}}">
+  <view class='names'>认证资料</view>
+  <view class='rens' bindtap='renz'>去认证</view>
+</view>
+
+<view class='header' wx:if="{{type == 2?true:false}}">
+  <view class='names'>教育经历</view>
+  <view class='school'>
+    <text>{{data.at.school}}</text>
+    <text>{{data.at.major}}</text>
+    <text>{{data.at.regular}}</text>
+  </view>
+  <view class='time_yi'>
+    <text class='time'>{{data.at.beginTime}} 至 {{data.at.endTime}}</text>
+    <text class='yi'>已认证</text>
+  </view>
+</view>
+
+<view class='header' wx:if="{{type == 2?true:false}}">
+  <view class='names'>工作经验</view>
+  <view wx:for="{{data.experience}}" wx:key="{{item.EP_id}}" class='experience'>
+    <view class='shang'>{{item.name}}</view>
+    <view class='ex_time'>{{item.begin_time}} - {{item.end_time}}</view>
+    <view class='shang'>{{item.content}}</view>
+  </view>
+</view>
+
+<view class='header' wx:if="{{type == 1?true:false}}">
+  <view class='names'>商家认证</view>
+  <view class='shang'>{{data.at.name}}</view>
+  <view class='shang'>{{data.at.address}}</view>
+  <view class='time_yi'>
+    <text class='time'>认证时间：{{data.at.createTime}}</text>
+    <text class='yi'>已认证</text>
+  </view>
+</view>
+
+
+<view class='header' wx:if="{{type == 1?true:false}}">
+  <view class='names'>商家简介</view>
+  <view class='shang'>{{data.explain.Business_brief}}</view>
+  <view class='shang'>具体地址：{{data.explain.Business_address}}</view>
+</view>
+
+
+<view class='header'>
+  <view class='names'>自我评价</view>
+  <view>{{data.explain.evaluate?data.explain.evaluate:"这个人很懒，什么都没有说"}}</view>
+</view>

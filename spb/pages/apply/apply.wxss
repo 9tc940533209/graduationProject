@@ -1,0 +1,30 @@
+/* pages/apply/apply.wxss */
+page{
+  background-color: #f5f5f8;
+}
+.card{
+  background-color: #fff;
+  margin-top: 10rpx;
+  padding: 20rpx 30rpx;
+}
+.title{
+  font-size: 40rpx;
+  margin-bottom: 10rpx;
+  font-weight: 800;
+}
+.but{
+  display: flex;
+}
+.time{
+  flex: 1;
+}
+.status{
+  width: 150rpx;
+  text-align: center;
+  border: 2rpx solid #ccc;
+}
+.zan{
+  color: #ccc;
+  text-align: center;
+  line-height: 400rpx;
+}

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+        <title>消息</title>
+        <!-- ico -->
+        <link rel="shortcut icon" href="./../favicon.ico"  type="image/x-icon"/> 
+        <!-- Bootstrap -->
+        <link href="./../css/bootstrap.min.css" rel="stylesheet">
+        <!-- 让 IE8 支持 HTML5 元素和媒体查询（media queries）功能 -->
+        <script type="text/javascript" src="./../js/respond.min.js"></script>
+        <script type="text/javascript" src="./../js/html5.min.js"></script>
+        <!-- 引入全局配置 -->
+        <link rel="stylesheet" type="text/css" href="./../css/oneself/start.css">
+        <!-- 弹出框 -->
+        <link rel="stylesheet" href="./../js/dialog/css/zdialog.css">
+        <!-- 导航条 -->
+        <link rel="stylesheet" href="./../css/oneself/navigationbar.css">
+        <link rel="stylesheet" href="./../css/oneself/notification.css">
+        <!-- 媒体查询css -->
+        <link rel="stylesheet" href="./../css/oneself/media.css">
+    </head>
+    <body>
+        <!-- 头部 -->
+        <div class="t_bj">
+                <div class="container heard_div">
+                    <span>为大学生提供优质兼职服务平台！</span>
+                    <span style="float:right;position: relative;" class="v-father">
+                        <span class="man" style="color:#ff6700"><i class="glyphicon glyphicon-user"></i></span>
+                        <a style="color:#ccc" class="y-deng"></a>
+                        <a href="./login.html" style="color:#ccc" class="v-deng">登陆</a>
+                        <a href="./register.html" class="v-deng" style="display: inline-block;height:40px;width: 80px;text-align: center;color: #fff;background-color: #ff6700;margin-left: 20px;">立即注册</a>
+                        <div class="v-down">
+                            <p><a class="person" href="./personal.html">个人中心</a></p>
+                            <p><a class="as" href="./notification.html">消息通知</a></p>
+                            <p><a class="as" href="./enshrine.html">我的收藏</a></p>
+                            <p class="signOut">退出登录</p>
+                        </div>
+                    </span>
+                </div>
+            </div>
+            <!-- 导航条 -->
+            <nav class="navbar navbar-default head">
+                <div class="container" style="height:100%">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header heights">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false" style="margin-top:15px">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="./../index.html" style="margin-top:-15px;">
+                            <img alt="Brand" src="./../img/logo1.png">
+                        </a>
+                    </div>
+                  
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav" style="margin-right:0;">
+                            <li id="navigation_1"><a href="./../index.html">首页<span class="sr-only">(current)</span></a></li>
+                            <li id="navigation_2"><a href="./ptjob.html">兼职</a></li>
+                            <!-- <li><a href="#">全职</a></li> -->
+                            <li id="navigation_3"><a href="./release.html">我要发布</a></li>
+                            <li id="navigation_4"><a href="./news.html">最新资讯</a></li>
+                            <!-- <li><a href="./message.html">留言板</a></li> -->
+                            <li id="navigation_5"><a href="./abouts.html">关于我们</a></li>
+                        </ul>
+                        <div style="margin-top:20px;float: right;padding-top:0" class=" hidden-sm hidden-xs head_shou">
+                            <input type="text" placeholder="请输入..." id="head_input">
+                            <span>
+                                <span class="glyphicon glyphicon-search"></span>
+                            </span>
+                        </div><!-- /.col-lg-6 -->
+                    </div><!-- /.navbar-collapse -->
+                </div><!-- /.container-fluid -->
+            </nav>
+
+        <div class="container not_content">
+            <div class="not_all">
+                全部消息
+            </div>
+            <p class="zanwu">暂无消息</p>
+            <ul class="not_ul messagelist">
+            </ul>
+            <div class="not_fenye">
+                <div id="page" class="page_div"></div>
+            </div>
+        </div>
+        <!-- 底部-->
+        <div class="dibu">
+			<div class="container pad">
+				<div class="dibu_div">
+					<div class="dibu_left">
+						<a href="./abouts.html" class="col-md-2 col-sm-3 col-xs-4">关于我们</a>
+						<a href="./abouts.html" class="col-md-2 col-sm-3 col-xs-4">加入我们</a>
+						<a href="./abouts.html" class="col-md-2 col-sm-3 col-xs-4"><span>发布</span>须知</a>
+						<a href="./abouts.html" class="col-md-2 col-sm-3 col-xs-4">帮助中心</a>
+						<span class="col-xs-12">Copyright©2018 jianzhi.com 大学生兼职平台 版权所有 粤ICP备13061591号</span>
+					</div>
+					<div class="dibu_right">
+						<img src="./../img/erweima.png" alt="">
+						<span class="hidden-xs">扫一扫<span class="hidden-sm hidden-md">关注微信号</span></span>
+					</div>
+				</div>
+			</div>
+		</div>
+        <!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
+        <script src="./../js/jquery-1.12.2.js"></script>
+        <!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
+        <script src="./../js/bootstrap.min.js"></script>
+        <!-- 公共js文件 -->
+        <script src="./../js/oneself/public.js"></script>
+        <!-- 导航条js -->
+        <script src="./../js/oneself/navigationbar.js"></script>
+        <!-- 弹出框 -->
+        <script src="./../js/dialog/js/zdialog.js"></script>
+        <!-- cookie -->
+        <script src="./../js/cookie.js"></script>
+        <!-- 模板引擎 -->
+        <script src="./../js/template-native.js"></script>
+        <!-- 分页样式 -->
+        <script src="./../js/paging.js"></script>
+        <script src="./../js/oneself/notification.js"></script>
+        <!-- 职业类型列表 -->
+        <script type="text/template" id="messagelist">
+            <% for(var i=0;i< items.length; i++){ %> 
+                <li>
+                    <a href="#"><%=items[i].content%></a>
+                    <div>
+                        <span><%=items[i].createTime%></span>
+                        <a class="glyphicon glyphicon-remove" id="<%=items[i].id%>"></a>
+                    </div>
+                </li>
+            <% } %>
+        </script>
+    </body>
+</html>

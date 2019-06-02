@@ -1,0 +1,8 @@
+<navigator class='card' wx:for="{{data}}" wx:key="{{item.id}}" url="/pages/pijob/pijob?id={{item.id}}">
+  <view class='title'>{{item.name}}</view>
+  <view class='but'>
+    <text class='time'>时间：{{item.begin_time}}</text>
+    <text class='status' style='border-color:{{item.result == 0?"#ccc":item.result == 1?"#67C23A":"#ff6700"}};color:{{item.result == 0?"#ccc":item.result == 1?"#67C23A":"#ff6700"}}'>{{item.result == 0?"未通过":item.result == 1?"已通过":"未审核"}}</text>
+  </view>
+</navigator>
+<view class='zan' wx:if="{{zan}}">(；´д｀)ゞ无申请任务</view>

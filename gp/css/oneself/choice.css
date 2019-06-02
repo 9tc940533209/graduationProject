@@ -1,0 +1,119 @@
+.contents{
+    background-color: #fff;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 20px 20px;
+}
+h2{
+    text-align: center;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #ccc;
+}
+thead tr th{
+    text-align: center;
+}
+tbody tr td{
+    text-align: center;
+}
+.operation span {
+    cursor: pointer;
+    /* display: inline-block; */
+    margin-right: 15px;
+}
+.operation span:hover{
+    color: red;
+}
+.operation a {
+    cursor: pointer;
+    display: inline-block;
+    margin-right: 15px;
+    color: #000;
+}
+.operation a:hover{
+    color: red;
+}
+.title-div{
+    overflow: hidden;
+}
+.title-div p{
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-size: 15px;
+}
+.titles{
+    color: #000;
+    font-weight: 700;
+    font-size: 15px;
+}
+.table{
+    margin-top: 25px;
+}
+.yin{
+    display: none;
+}
+.zanwu{
+    text-align:center;
+    display: none;
+    margin-bottom: 20px;
+    color: #ccc;
+}
+.glyphicon-star{
+    display: none;
+}
+
+
+/* 打分评价 */
+.xiuShang{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 99;
+  background-color: rgba(0,0,0,0.5);
+  display: none;
+}
+.xiuShang_content{
+  width: 50%;
+  /* height: 400px; */
+  margin: 0 auto;
+  min-width: 400px;
+  background-color: #fff;
+  margin-top: 180px;
+  padding: 10px 10px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.xiuShang_content_head{
+  overflow: hidden;
+  margin-bottom: 40px;
+}
+.xiuShang_content_head span:first-child{
+  float: left;
+  font-size: 20px;
+  font-weight: 700;
+}
+.xiuShang_content_head span:last-child{
+  float: right;
+  font-size: 18px;
+  cursor: pointer;
+}
+.xiuShang_content_head span:last-child:hover{
+  color: #ff6700;
+}
+.form-group{
+  display: block;
+  margin-bottom: 30px;
+  /* height: 100px; */
+  overflow: hidden;
+}
+.control-label{
+  text-align: right;
+}
+.xiugai{
+  position: absolute;
+  right: 0;
+  top: 0;
+  color: #ff6700;
+  cursor: pointer;
+  display: none;
+}

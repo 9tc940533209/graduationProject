@@ -1,0 +1,26 @@
+.edit_content {
+    /* height: 1000px; */
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 30px 20px;
+    background-color: #fff;
+}
+.form-group{
+    display: block;
+    margin-bottom: 30px;
+    /* height: 100px; */
+    overflow: hidden;
+}
+.control-label{
+    text-align: right;
+}
+.xian{
+    padding-top: 50px;
+    border-top: 1px solid #ccc;
+}
+.student{
+    display: none;
+}
+.merchant{
+    display: none;
+}

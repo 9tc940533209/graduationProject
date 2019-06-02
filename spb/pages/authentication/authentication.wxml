@@ -1,0 +1,28 @@
+<form bindsubmit="formSubmit" bindreset="formReset">
+  <view class='form_view'>
+    <text class='titles'>认证类型：</text>
+    <radio-group class="radio-group" name="sex">
+      <label class="radio">
+        <radio value="学生" />学生
+      </label>
+      <label class="radio">
+        <radio value="商家" />商家
+      </label>
+    </radio-group>
+  </view>
+
+  <view class='form_view'>
+    <text class='titles'>身份证：</text>
+    <input name="age" type='idcard' class='inputs' style="border-color:{{focusId == 1?'#ff6700':'#ccc'}}" placeholder='请输入身份证号码' bindfocus="inputFocus" bindblur="inputBlur" data-id='1' placeholder-class='placeholderClass' value='{{data.age}}'></input>
+  </view>
+
+  <view class='form_view'>
+    <text class='titles'>身份证照片(正）：</text>
+    <button data-id='2' bindtap='upimg'>选择文件</button>
+  </view>
+
+  <view class='form_view'>
+    <text class='titles'>身份证照片(反）：</text>
+    <button data-id='3' bindtap='upimg'>选择文件</button>
+  </view>
+</form>

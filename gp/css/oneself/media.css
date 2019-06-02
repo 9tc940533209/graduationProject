@@ -1,0 +1,350 @@
+/*1200以上的屏幕宽度*/
+@media screen and (min-width: 1201px){
+
+}
+/*1200以下的宽度*/
+@media screen and (max-width: 1200px){
+    /* 侧栏 */
+    .toolbar {
+        display: none;
+    }
+    .toolbar>div {
+        background-color: #ff6700;
+        color: #fff;
+    }
+    .money_time .choices>div{
+        width: 90%;
+    }
+    .money,.start_time,.numbers,.choice {
+        width: 90%;
+    }
+    .news_content_left {
+        width: 212px;
+        min-width: 212px;
+    }
+}
+/*992以下的宽度*/
+@media screen and (max-width: 991px){
+   	.deng {
+   	    display: none;
+   	}
+   	/* .heard_div {
+   	    padding: 0 5px;
+   	} */
+   	.content {
+   	     margin-top: 70px;
+   	}
+   	.part_time_content>div:nth-of-type(2){
+   	    border-right: 0;
+	}
+	.pt_right_head {
+		padding-top: 0;
+	}
+	.pt_right_head p:last-child {
+		margin-top: 3px;
+    }
+    .pt_right_center {
+        margin-top: 10px;
+    }
+    .pt_right {
+        padding-bottom: 10px;
+    }
+    .rele_content {
+        width: 95%;
+    }
+}
+/*758以下的屏幕宽度*/
+@media screen and (max-width: 768px){
+    .content {
+   	    margin-top: 50px;
+   	}
+   	.bottom_dibu_zuo {
+   	    width: 100%!important;
+	   }
+	.backtop {
+		width: 40px;
+		height: 40px;
+		border-radius: 50%;
+		background-color: #ff6700;
+		padding-top: 8px;
+		color: #fff;
+		z-index: 999;
+        top: 50%;
+    }
+    .pt_content {
+        padding: 0 0 !important;
+    }
+    .pt_screen {
+        margin-top: 0;
+    }
+    .pt_recruitment_detail {
+        color: #333;
+    }
+    /* 分页 */
+    #firstPage,#lastPage{
+        display: none;
+    }
+    .page_s {
+        margin: 30px 0!important;
+        height: 78px;
+    }
+    /* 个人中心头像 */
+    .touxiang {
+        margin: 0 10px;
+    }
+    /* 留言板 */
+    .mes_content {
+        margin: 0;
+        height: 100%;
+    }
+    .money,.choices ul,.choices>div,.start_time,.numbers,.choice {
+        width: 100%;
+    }
+    .money_time .choices>div{
+        width: 100%;
+    }
+    .address {
+        /* height: 250px; */
+    }
+    .address>div {
+        margin-bottom: 20px;
+    }
+    .times {
+        /* height: 200px; */
+    }
+    .san>div{
+        width: 100%;
+    }
+    .choices>div, .san>div, .rele_input {
+        border-radius: 5px;
+    }
+    /* 底部 */
+    .dibu_left>a {
+      line-height: 50px;
+      font-size: 15px;
+    }
+    /* 新闻 */
+    .news_content ul li {
+        padding: 1px 1px;
+        padding-top: 0px;
+    }
+    .news_content ul li>div{
+        padding: 10px;
+    }
+    .news_nav {
+        overflow: hidden;
+        /* margin-bottom: 0px; */
+        border: 1px solid #f5f5f5;
+    }
+    .news_nav a{
+        width: 50%;
+        float: left;
+    }
+    .lianxis_contents{
+        padding: 40px 0;
+        padding-left: 30px;
+    }
+
+}
+/*500以下的屏幕宽度*/
+@media screen and (max-width: 500px){
+    .dibu {
+        height: 250px;
+    }
+    .dibu_div  {
+       margin-top: 50px;
+    }
+    .navbar-brand img {
+        width: 120px;
+    }
+    .head {
+        height: 62px;
+    }
+    .part_time_content>div:nth-child(n+5) {
+        display: none;
+    }
+    .guang {
+        margin: 20px 0!important;
+    }
+    .exc_message span {
+        margin: 0 -12px;
+    }
+    .login {
+	  	width: 95%!important;
+	  	margin-top: 0!important;
+	  	background-image: url(./a.jpg)!important;
+	  	box-shadow: 0 0 0 0 rgba(0,0,0,.2)!important;
+	}	
+    .register {
+		width: 95%!important;
+		margin-top: 0!important;
+		background-image: url(./a.jpg)!important;
+		box-shadow: 0 0 0 0 rgba(0,0,0,.2)!important;
+    }
+    .pt_screen_vocation ul li {
+        margin-right: 10px;
+    }
+    .pt_screen_condition ul li {
+        margin-right: 10px;
+    }
+    .pt_recruitment>div {
+        padding: 15px 15px;
+        margin-bottom: 0;
+        border-bottom: 1px solid #ccc;
+    }
+    .pt_recruitment_money {
+        margin-top: 0px;
+    }
+    .pt_recruitment>div:hover {
+        z-index: 222;
+        box-shadow: 0px 15px 20px  rgba(0,0,0,.2);
+    }
+    /* 轮播图圆点 */
+    .carousel-indicators {
+        bottom: 0px;
+    }
+    .carousel-indicators>li {
+        width: 5px;
+        height: 5px;
+    }
+    .carousel-indicators .active {
+        width: 5px;
+        height: 5px;
+	}
+	/* 商家 */
+	.pi_merchant img {
+		width: 80px;
+		height: 80px;
+		margin-right: 20px;
+	}
+	.pi_merchant_head>span:first-child {
+		font-size: 30px;
+		font-weight: 700;
+    }
+    #pi_Apply {
+        display: none;
+    }
+    .pi_information>p{
+        font-size: 25px;
+    }
+    .pi_fl {
+      display: block;
+      /* border-top: 1px solid #ccc; */
+      box-shadow: 0px -5px 10px  rgba(0,0,0,.1);
+    }
+    .pi_crumbs {
+        display: none;
+    }
+    .pi_dibu {
+        display: none;
+    }
+    .pi_information_content {
+        padding-bottom: 30px;
+    }
+    /* 商家页面 */
+    .pub_second_xin>div>p:last-child {
+        margin-right: 0px;
+    }
+    .pub_yin {
+        display: none;
+    }
+    .pub_xians {
+        display: block;
+        position: relative;
+        bottom: 0;
+        right: 0;
+        background-color: #fff;
+        padding-top: 10px;
+        padding-left: 10px;
+        padding-bottom: 5px;
+    }
+    .page_div {
+        float: left;
+    }
+    /* 个人中心头像 */
+    .touxiang {
+        margin: 0 0px;
+        margin-right: 10px;
+    }
+    .per_content {
+        padding: 20px 10px;
+    }
+    .per_juti {
+        color: #333;
+        font-size: 13px;
+        margin-bottom: 15px;
+    }
+    .per_juti span {
+        display: inline-block;
+        border-right: 1px solid #ccc;
+        text-align: left;
+        margin-right: 5px;
+        min-width: 30px;
+    }
+    .per_juti span:first-child {
+        min-width: 25px;
+    }
+    .per_first, .per_second, .per_third, .per_fifth{
+        padding-bottom: 20px;
+    }
+    .per_fourth {
+        padding-bottom: 0px;
+    }
+    .per_eamil {
+        display: none;
+    }
+    .per_xin {
+        margin: 0px;
+        margin-top: 10px;
+    }
+    .per_second>p, .per_third>p:first-child, .per_fourth>p:first-child, .per_fifth>p:first-child {
+        margin-bottom: 10px;
+    }
+    .per_second>div>span {
+        padding: 0;
+    }
+    .per_fourth_experience>div {
+        margin-bottom: 15px;
+    }
+    .per_task {
+        padding: 10px 0px;
+    }
+    .ab_nav {
+        margin-top: 0px;
+    }
+    .ab_nav>div {
+        width: 100px;
+    }
+    .rele_btn {
+      width: 100%;
+    }
+    .fenye {
+        margin: 5px 0;
+        overflow: hidden;
+    }
+}
+/*395以下的屏幕宽度*/
+@media screen and (max-width: 395px){
+    /* 分页 下一页 */
+    #nextPage,#prePage {
+        display: none;
+    }
+    #firstPage {
+        display: inline-block!important;
+    }
+    .dibu {
+      background-image: url(./../../img/dibubg_zuo.png);
+      background-repeat: no-repeat;
+      background-position: 50% bottom;
+      background-color: #232830;
+      height:250px;
+    }
+    .dibu_left>a {
+      line-height: 50px;
+      font-size: 13px;
+    }
+    .pad {
+      padding: 0 5px;
+      padding-left: 10px;
+    }
+}
